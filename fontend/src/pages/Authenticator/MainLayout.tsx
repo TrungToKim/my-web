@@ -28,7 +28,7 @@ export default function MainLayout() {
         }}
       >
         <div className="nav-logo">
-          <NavLink to="/Home">
+          <NavLink to="/">
             <img
               src={reactLogo}
               alt="ReactLogo"
