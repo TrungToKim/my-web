@@ -1,0 +1,159 @@
+.itchio-page {
+  margin: 0 auto;
+  padding: 32px 20px;
+  display: flex;
+}
+
+.itchio-sidebar {
+  width: 220px;
+  min-width: 220px;
+  padding-right: 28px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6a6a7a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .nav-btn {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    color: #b0b0c0;
+    background-color: transparent;
+    text-align: left;
+    transition: all 0.15s;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+
+    &.active {
+      font-weight: 600;
+      color: #fff;
+      background-color: #0f3460;
+    }
+  }
+}
+
+.itchio-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.itchio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.itchio-empty {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+  color: #7a7a8a;
+  font-size: 15px;
+}
+
+.itchio-item {
+  display: block;
+  width: calc(16.666% - 14px);
+  margin-bottom: 24px;
+  background-color: #1a1a2e;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 1px solid #16213e;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+
+  .discount-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .item-body {
+    padding: 12px;
+
+    .item-title {
+      font-weight: 600;
+      font-size: 13px;
+      color: #e0e0e0;
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .item-author {
+      font-size: 11px;
+      color: #7a7a8a;
+      margin-bottom: 2px;
+    }
+
+    .item-meta {
+      font-size: 10px;
+      color: #5a5a6a;
+      margin-bottom: 4px;
+      text-transform: capitalize;
+    }
+
+    .item-price {
+      font-size: 13px;
+      font-weight: 700;
+      color: #e0e0e0;
+
+      &.free {
+        color: #4caf50;
+      }
+    }
+
+    .top-seller {
+      font-size: 10px;
+      color: #f39c12;
+      font-weight: 400;
+    }
+  }
+}
+
+.itchio-sentinel {
+  height: 1px;
+}
+
+.itchio-loading {
+  text-align: center;
+  padding: 24px;
+  color: #7a7a8a;
+  font-size: 14px;
+}
